@@ -15,6 +15,10 @@ class MenuDeProductos{
         cy.get(this.getMenuLocators().ADD_PRODUCTO).should('be.visible').click()
         cy.wait(1000)
     }
+    DarClickEnCarrito(){
+        cy.get(this.getMenuLocators().SHOPPING_CAR).should('be.visible').click()
+        cy.wait(1000)
+    }
 
 }
 module.exports= MenuDeProductos
