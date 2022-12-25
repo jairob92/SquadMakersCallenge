@@ -72,7 +72,3 @@ And ("Visualiza el mensaje de confirmacion de compra",()=>{
 
 })
 });
-
-
-
-
