@@ -14,6 +14,11 @@ IngresarCorreo(username) {
 
   ClickonSubmitButton() {
     cy.get(this.getHomePageLocators().LOGIN_BUTTON).should("be.visible").click();
+    cy.wait(1000);
+  }
+  VisualizaPaginaInicio(){
+    cy.get(this.getHomePageLocators().TITLE_PAGE).should("be.visible").click();
+    cy.wait(1000);
   }
 }
 module.exports =Login
